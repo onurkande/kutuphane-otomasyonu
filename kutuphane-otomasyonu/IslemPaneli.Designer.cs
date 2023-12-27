@@ -46,7 +46,7 @@ namespace kutuphane_otomasyonu
             // 
             button1.BackColor = Color.FromArgb(128, 255, 255);
             button1.Dock = DockStyle.Top;
-            button1.Image = (Image)resources.GetObject("button1.Image");
+            //button1.Image = (Image)resources.GetObject("button1.Image");
             button1.ImageAlign = ContentAlignment.MiddleLeft;
             button1.Location = new Point(0, 0);
             button1.Name = "button1";

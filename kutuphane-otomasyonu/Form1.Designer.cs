@@ -46,6 +46,7 @@ namespace kutuphane_otomasyonu
             this.personelAd.Name = "personelAd";
             this.personelAd.Size = new System.Drawing.Size(192, 22);
             this.personelAd.TabIndex = 0;
+            this.personelAd.TextChanged += new System.EventHandler(this.personelAd_TextChanged_1);
             // 
             // label1
             // 
@@ -58,6 +59,7 @@ namespace kutuphane_otomasyonu
             this.label1.Size = new System.Drawing.Size(161, 35);
             this.label1.TabIndex = 1;
             this.label1.Text = "Personel Adı";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -70,6 +72,7 @@ namespace kutuphane_otomasyonu
             this.label2.Size = new System.Drawing.Size(175, 35);
             this.label2.TabIndex = 2;
             this.label2.Text = "Personel Şifre";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // personelSifre
             // 
@@ -78,6 +81,7 @@ namespace kutuphane_otomasyonu
             this.personelSifre.Name = "personelSifre";
             this.personelSifre.Size = new System.Drawing.Size(192, 22);
             this.personelSifre.TabIndex = 3;
+            this.personelSifre.TextChanged += new System.EventHandler(this.personelSifre_TextChanged_1);
             // 
             // personelGiris
             // 
@@ -89,6 +93,7 @@ namespace kutuphane_otomasyonu
             this.personelGiris.TabIndex = 4;
             this.personelGiris.Text = "Giriş";
             this.personelGiris.UseVisualStyleBackColor = false;
+            this.personelGiris.Click += new System.EventHandler(this.personelGiris_Click_1);
             // 
             // Form1
             // 

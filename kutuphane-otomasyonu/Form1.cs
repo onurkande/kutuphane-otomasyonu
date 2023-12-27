@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System;
+using System.Linq;
 
 namespace kutuphane_otomasyonu
 {
@@ -11,12 +12,12 @@ namespace kutuphane_otomasyonu
             InitializeComponent();
         }
 
-        private void personelGiris_Click(object sender, EventArgs e)
+        private void personelGiris_Click_1(object sender, EventArgs e)
         {
             string gelenAd = personelAd.Text; // ada girilen degeri aldýk
             string gelenSifre = personelSifre.Text; //sifreye girilen degeri aldýk
 
-            var personel = db.Personeller.Where(x => x.personel_ad.Equels(gelenAd) && x.personel_sifre.Equels(gelenSifre)).FirstOrDefault(); //personellerden x nesnesi olusturuldu
+            var personel = db.personal.Where(x => x.personal_ad.Equals(gelenAd) && x.personal_sifre.Equals(gelenSifre)).FirstOrDefault(); //personellerden x nesnesi olusturuldu
 
             if (personel == null)
             {
@@ -31,12 +32,22 @@ namespace kutuphane_otomasyonu
             }
         }
 
-        private void personelAd_TextChanged(object sender, EventArgs e)
+        private void personelAd_TextChanged_1(object sender, EventArgs e)
         {
 
         }
 
-        private void personelSifre_TextChanged(object sender, EventArgs e)
+        private void personelSifre_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }
