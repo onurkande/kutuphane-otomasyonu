@@ -117,6 +117,7 @@ namespace kutuphane_otomasyonu
             this.ekleKullanicibtn.Text = "kullanıcı ekle    ";
             this.ekleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ekleKullanicibtn.UseVisualStyleBackColor = false;
+            this.ekleKullanicibtn.Click += new System.EventHandler(this.ekleKullanicibtn_Click);
             // 
             // kullaniciBilgiPaneli
             // 

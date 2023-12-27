@@ -1,4 +1,5 @@
-﻿using System;
+﻿using kutuphane_otomasyonu.Kullanici;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -58,6 +59,13 @@ namespace kutuphane_otomasyonu
             KullaniciListeForm klisteform=new KullaniciListeForm();
             klisteform.MdiParent = this;    
             klisteform.Show();
+        }
+
+        private void ekleKullanicibtn_Click(object sender, EventArgs e)
+        {
+            KullaniciEkleForm ekleForm=new KullaniciEkleForm();
+            ekleForm.MdiParent = this;
+            ekleForm.Show();    
         }
     }
 }
