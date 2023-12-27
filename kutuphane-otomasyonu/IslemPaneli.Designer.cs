@@ -31,111 +31,129 @@ namespace kutuphane_otomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            Button button1;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(IslemPaneli));
-            panel1 = new Panel();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            kullaniciBilgiPaneli = new Panel();
-            button1 = new Button();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.silKullanicibtn = new System.Windows.Forms.Button();
+            this.guncelleKullanicibtn = new System.Windows.Forms.Button();
+            this.ekleKullanicibtn = new System.Windows.Forms.Button();
+            this.kullaniciBilgiPaneli = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.SuspendLayout();
             // 
             // button1
             // 
-            button1.BackColor = Color.FromArgb(128, 255, 255);
-            button1.Dock = DockStyle.Top;
-            //button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(250, 91);
-            button1.TabIndex = 2;
-            button1.Text = "kullanıcılar      ";
-            button1.TextAlign = ContentAlignment.MiddleRight;
-            button1.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 0);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(188, 59);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "kullanıcılar      ";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
-            panel1.BackColor = SystemColors.MenuHighlight;
-            panel1.Controls.Add(button4);
-            panel1.Controls.Add(button3);
-            panel1.Controls.Add(button2);
-            panel1.Controls.Add(button1);
-            panel1.Dock = DockStyle.Left;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(250, 725);
-            panel1.TabIndex = 0;
+            this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.silKullanicibtn);
+            this.panel1.Controls.Add(this.guncelleKullanicibtn);
+            this.panel1.Controls.Add(this.ekleKullanicibtn);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(188, 471);
+            this.panel1.TabIndex = 0;
             // 
-            // button4
+            // silKullanicibtn
             // 
-            button4.BackColor = Color.FromArgb(192, 0, 0);
-            button4.BackgroundImageLayout = ImageLayout.None;
-            button4.ForeColor = SystemColors.ControlText;
-            button4.Image = (Image)resources.GetObject("button4.Image");
-            button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(0, 261);
-            button4.Name = "button4";
-            button4.Size = new Size(250, 91);
-            button4.TabIndex = 5;
-            button4.Text = "kullanıcı sil    ";
-            button4.TextAlign = ContentAlignment.MiddleRight;
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            this.silKullanicibtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.silKullanicibtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.silKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.silKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.silKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.silKullanicibtn.Location = new System.Drawing.Point(0, 170);
+            this.silKullanicibtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.silKullanicibtn.Name = "silKullanicibtn";
+            this.silKullanicibtn.Size = new System.Drawing.Size(188, 59);
+            this.silKullanicibtn.TabIndex = 5;
+            this.silKullanicibtn.Text = "kullanıcı sil    ";
+            this.silKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.silKullanicibtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // guncelleKullanicibtn
             // 
-            button3.BackColor = Color.FromArgb(255, 128, 0);
-            button3.BackgroundImageLayout = ImageLayout.None;
-            button3.ForeColor = SystemColors.ControlText;
-            button3.Image = (Image)resources.GetObject("button3.Image");
-            button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(0, 174);
-            button3.Name = "button3";
-            button3.Size = new Size(250, 91);
-            button3.TabIndex = 4;
-            button3.Text = "kullanıcı düzenle    ";
-            button3.TextAlign = ContentAlignment.MiddleRight;
-            button3.UseVisualStyleBackColor = false;
+            this.guncelleKullanicibtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.guncelleKullanicibtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.guncelleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guncelleKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guncelleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 113);
+            this.guncelleKullanicibtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guncelleKullanicibtn.Name = "guncelleKullanicibtn";
+            this.guncelleKullanicibtn.Size = new System.Drawing.Size(188, 59);
+            this.guncelleKullanicibtn.TabIndex = 4;
+            this.guncelleKullanicibtn.Text = "kullanıcı düzenle    ";
+            this.guncelleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.guncelleKullanicibtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // ekleKullanicibtn
             // 
-            button2.BackColor = Color.FromArgb(128, 255, 128);
-            button2.BackgroundImageLayout = ImageLayout.None;
-            button2.ForeColor = SystemColors.ControlText;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(0, 87);
-            button2.Name = "button2";
-            button2.Size = new Size(250, 91);
-            button2.TabIndex = 3;
-            button2.Text = "kullanıcı ekle    ";
-            button2.TextAlign = ContentAlignment.MiddleRight;
-            button2.UseVisualStyleBackColor = false;
+            this.ekleKullanicibtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.ekleKullanicibtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ekleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ekleKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.ekleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ekleKullanicibtn.Location = new System.Drawing.Point(0, 57);
+            this.ekleKullanicibtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ekleKullanicibtn.Name = "ekleKullanicibtn";
+            this.ekleKullanicibtn.Size = new System.Drawing.Size(188, 59);
+            this.ekleKullanicibtn.TabIndex = 3;
+            this.ekleKullanicibtn.Text = "kullanıcı ekle    ";
+            this.ekleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ekleKullanicibtn.UseVisualStyleBackColor = false;
             // 
             // kullaniciBilgiPaneli
             // 
-            kullaniciBilgiPaneli.BackColor = SystemColors.MenuHighlight;
-            kullaniciBilgiPaneli.Dock = DockStyle.Top;
-            kullaniciBilgiPaneli.Location = new Point(250, 0);
-            kullaniciBilgiPaneli.Name = "kullaniciBilgiPaneli";
-            kullaniciBilgiPaneli.Size = new Size(1115, 91);
-            kullaniciBilgiPaneli.TabIndex = 1;
-            kullaniciBilgiPaneli.Paint += panel2_Paint;
+            this.kullaniciBilgiPaneli.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.kullaniciBilgiPaneli.Dock = System.Windows.Forms.DockStyle.Top;
+            this.kullaniciBilgiPaneli.Location = new System.Drawing.Point(188, 0);
+            this.kullaniciBilgiPaneli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kullaniciBilgiPaneli.Name = "kullaniciBilgiPaneli";
+            this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(836, 59);
+            this.kullaniciBilgiPaneli.TabIndex = 1;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(213, 113);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(767, 285);
+            this.dataGridView1.TabIndex = 2;
             // 
             // IslemPaneli
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1365, 725);
-            Controls.Add(kullaniciBilgiPaneli);
-            Controls.Add(panel1);
-            Name = "IslemPaneli";
-            Text = "IslemPaneli";
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1024, 471);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.kullaniciBilgiPaneli);
+            this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Name = "IslemPaneli";
+            this.Text = "IslemPaneli";
+            this.Load += new System.EventHandler(this.IslemPaneli_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -143,8 +161,9 @@ namespace kutuphane_otomasyonu
         private Panel panel1;
         private Panel kullaniciBilgiPaneli;
         private Button button1;
-        private Button button2;
-        private Button button4;
-        private Button button3;
+        private Button ekleKullanicibtn;
+        private Button silKullanicibtn;
+        private Button guncelleKullanicibtn;
+        private DataGridView dataGridView1;
     }
 }

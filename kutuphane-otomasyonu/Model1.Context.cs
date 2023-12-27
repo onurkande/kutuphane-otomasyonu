@@ -26,5 +26,6 @@ namespace kutuphane_otomasyonu
         }
     
         public virtual DbSet<personal> personal { get; set; }
+        public virtual DbSet<Kullanicilar> Kullanicilar { get; set; }
     }
 }
