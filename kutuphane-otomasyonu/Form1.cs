@@ -20,11 +20,11 @@ namespace kutuphane_otomasyonu
 
             if (personel == null)
             {
-                MessageBox.Show("Giriþ baþarýsýz,girdiðiniz bilgileri kontrol edin!");
+                MessageBox.Show("Giriş başarısız,girdiğiniz bilgileri kontrol edin!");
             }
             else
             {
-                MessageBox.Show("Giriþ baþarýlý"); //Ekrana mesajý gösteren kod
+                MessageBox.Show("Giriş Başarılı"); //Ekrana mesajý gösteren kod
                 IslemPaneli panel = new IslemPaneli();
                 panel.Show();
                 this.Hide();

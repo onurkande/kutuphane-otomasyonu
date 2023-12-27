@@ -32,80 +32,82 @@ namespace kutuphane_otomasyonu
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            personelAd = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            personelSifre = new TextBox();
-            personelGiris = new Button();
-            SuspendLayout();
+            this.personelAd = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.personelSifre = new System.Windows.Forms.TextBox();
+            this.personelGiris = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // personelAd
             // 
-            personelAd.Location = new Point(415, 99);
-            personelAd.Name = "personelAd";
-            personelAd.Size = new Size(192, 27);
-            personelAd.TabIndex = 0;
-            personelAd.TextChanged += personelAd_TextChanged;
+            this.personelAd.Location = new System.Drawing.Point(415, 79);
+            this.personelAd.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.personelAd.Name = "personelAd";
+            this.personelAd.Size = new System.Drawing.Size(192, 22);
+            this.personelAd.TabIndex = 0;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Calibri", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label1.ForeColor = SystemColors.ControlLightLight;
-            label1.Location = new Point(177, 99);
-            label1.Name = "label1";
-            label1.Size = new Size(161, 35);
-            label1.TabIndex = 1;
-            label1.Text = "Personel Adı";
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Calibri", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(177, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 35);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Personel Adı";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Calibri", 16.2F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 162);
-            label2.ForeColor = Color.Transparent;
-            label2.Location = new Point(177, 159);
-            label2.Name = "label2";
-            label2.Size = new Size(175, 35);
-            label2.TabIndex = 2;
-            label2.Text = "Personel Şifre";
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Calibri", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label2.ForeColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(177, 127);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(175, 35);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Personel Şifre";
             // 
             // personelSifre
             // 
-            personelSifre.Location = new Point(415, 166);
-            personelSifre.Name = "personelSifre";
-            personelSifre.Size = new Size(192, 27);
-            personelSifre.TabIndex = 3;
-            personelSifre.TextChanged += personelSifre_TextChanged;
+            this.personelSifre.Location = new System.Drawing.Point(415, 133);
+            this.personelSifre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.personelSifre.Name = "personelSifre";
+            this.personelSifre.Size = new System.Drawing.Size(192, 22);
+            this.personelSifre.TabIndex = 3;
             // 
             // personelGiris
             // 
-            personelGiris.BackColor = Color.Transparent;
-            personelGiris.Location = new Point(415, 237);
-            personelGiris.Name = "personelGiris";
-            personelGiris.Size = new Size(192, 45);
-            personelGiris.TabIndex = 4;
-            personelGiris.Text = "Giriş";
-            personelGiris.UseVisualStyleBackColor = false;
-            personelGiris.Click += personelGiris_Click;
+            this.personelGiris.BackColor = System.Drawing.Color.Transparent;
+            this.personelGiris.Location = new System.Drawing.Point(415, 190);
+            this.personelGiris.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.personelGiris.Name = "personelGiris";
+            this.personelGiris.Size = new System.Drawing.Size(192, 36);
+            this.personelGiris.TabIndex = 4;
+            this.personelGiris.Text = "Giriş";
+            this.personelGiris.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(866, 423);
-            Controls.Add(personelGiris);
-            Controls.Add(personelSifre);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(personelAd);
-            Name = "Form1";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(866, 338);
+            this.Controls.Add(this.personelGiris);
+            this.Controls.Add(this.personelSifre);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.personelAd);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
