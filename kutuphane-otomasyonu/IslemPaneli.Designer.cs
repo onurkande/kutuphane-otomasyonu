@@ -37,9 +37,7 @@ namespace kutuphane_otomasyonu
             this.guncelleKullanicibtn = new System.Windows.Forms.Button();
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
             this.kullaniciBilgiPaneli = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -49,7 +47,7 @@ namespace kutuphane_otomasyonu
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(188, 59);
             this.button1.TabIndex = 2;
@@ -67,7 +65,7 @@ namespace kutuphane_otomasyonu
             this.panel1.Controls.Add(this.button1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(188, 471);
             this.panel1.TabIndex = 0;
@@ -80,7 +78,7 @@ namespace kutuphane_otomasyonu
             this.silKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.silKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.silKullanicibtn.Location = new System.Drawing.Point(0, 170);
-            this.silKullanicibtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.silKullanicibtn.Margin = new System.Windows.Forms.Padding(2);
             this.silKullanicibtn.Name = "silKullanicibtn";
             this.silKullanicibtn.Size = new System.Drawing.Size(188, 59);
             this.silKullanicibtn.TabIndex = 5;
@@ -96,7 +94,7 @@ namespace kutuphane_otomasyonu
             this.guncelleKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.guncelleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 113);
-            this.guncelleKullanicibtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.guncelleKullanicibtn.Margin = new System.Windows.Forms.Padding(2);
             this.guncelleKullanicibtn.Name = "guncelleKullanicibtn";
             this.guncelleKullanicibtn.Size = new System.Drawing.Size(188, 59);
             this.guncelleKullanicibtn.TabIndex = 4;
@@ -112,7 +110,7 @@ namespace kutuphane_otomasyonu
             this.ekleKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ekleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.ekleKullanicibtn.Location = new System.Drawing.Point(0, 57);
-            this.ekleKullanicibtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ekleKullanicibtn.Margin = new System.Windows.Forms.Padding(2);
             this.ekleKullanicibtn.Name = "ekleKullanicibtn";
             this.ekleKullanicibtn.Size = new System.Drawing.Size(188, 59);
             this.ekleKullanicibtn.TabIndex = 3;
@@ -125,33 +123,24 @@ namespace kutuphane_otomasyonu
             this.kullaniciBilgiPaneli.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.kullaniciBilgiPaneli.Dock = System.Windows.Forms.DockStyle.Top;
             this.kullaniciBilgiPaneli.Location = new System.Drawing.Point(188, 0);
-            this.kullaniciBilgiPaneli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.kullaniciBilgiPaneli.Margin = new System.Windows.Forms.Padding(2);
             this.kullaniciBilgiPaneli.Name = "kullaniciBilgiPaneli";
             this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(836, 59);
             this.kullaniciBilgiPaneli.TabIndex = 1;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(213, 113);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(767, 285);
-            this.dataGridView1.TabIndex = 2;
             // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 471);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.kullaniciBilgiPaneli);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "IslemPaneli";
             this.Text = "IslemPaneli";
             this.Load += new System.EventHandler(this.IslemPaneli_Load);
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -164,6 +153,5 @@ namespace kutuphane_otomasyonu
         private Button ekleKullanicibtn;
         private Button silKullanicibtn;
         private Button guncelleKullanicibtn;
-        private DataGridView dataGridView1;
     }
 }

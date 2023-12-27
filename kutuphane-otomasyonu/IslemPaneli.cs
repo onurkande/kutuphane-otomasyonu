@@ -38,7 +38,7 @@ namespace kutuphane_otomasyonu
             ekleKullanicibtn.Visible = false;
             guncelleKullanicibtn.Visible=false; 
             silKullanicibtn.Visible= false;
-            dataGridView1.Visible=false;    
+               
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -55,9 +55,9 @@ namespace kutuphane_otomasyonu
                 guncelleKullanicibtn.Visible = false;
                 silKullanicibtn.Visible = false;
             }
-            dataGridView1.Visible = true;
-            var kullanicilar=db.Kullanicilar.ToList();
-            dataGridView1.DataSource = kullanicilar;
+            KullaniciListeForm klisteform=new KullaniciListeForm();
+            klisteform.MdiParent = this;    
+            klisteform.Show();
         }
     }
 }
