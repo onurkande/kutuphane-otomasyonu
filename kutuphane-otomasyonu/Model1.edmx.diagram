@@ -7,6 +7,7 @@
       <Diagram DiagramId="283cdfe842864b8d9755143ac8155be5" Name="Diagram1">
         <EntityTypeShape EntityType="KutuphaneOtomasyonModel.personal" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kullanicilar" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kaynaklar" Width="1.5" PointX="6" PointY="0.875" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
