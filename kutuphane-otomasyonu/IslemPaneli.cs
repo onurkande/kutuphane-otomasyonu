@@ -119,5 +119,12 @@ namespace kutuphane_otomasyonu
             kliste.MdiParent = this;
             kliste.Show();
         }
+
+        private void silKaynakbtn_Click(object sender, EventArgs e)
+        {
+            KaynakSilForm kSil = new KaynakSilForm();
+            kSil.MdiParent = this;
+            kSil.Show();
+        }
     }
 }
