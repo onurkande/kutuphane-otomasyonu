@@ -41,6 +41,7 @@ namespace kutuphane_otomasyonu
             this.guncelleKullanicibtn = new System.Windows.Forms.Button();
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
             this.kullaniciBilgiPaneli = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +54,7 @@ namespace kutuphane_otomasyonu
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 73);
+            this.button1.Size = new System.Drawing.Size(251, 70);
             this.button1.TabIndex = 2;
             this.button1.Text = "kullanıcılar      ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -64,6 +65,7 @@ namespace kutuphane_otomasyonu
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.kaynaklarbtn);
             this.panel1.Controls.Add(this.silKaynakbtn);
             this.panel1.Controls.Add(this.GuncelKaynakbtn);
@@ -76,7 +78,7 @@ namespace kutuphane_otomasyonu
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(251, 607);
+            this.panel1.Size = new System.Drawing.Size(251, 689);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -87,10 +89,10 @@ namespace kutuphane_otomasyonu
             this.kaynaklarbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.kaynaklarbtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.kaynaklarbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.kaynaklarbtn.Location = new System.Drawing.Point(0, 308);
+            this.kaynaklarbtn.Location = new System.Drawing.Point(0, 250);
             this.kaynaklarbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.kaynaklarbtn.Name = "kaynaklarbtn";
-            this.kaynaklarbtn.Size = new System.Drawing.Size(251, 73);
+            this.kaynaklarbtn.Size = new System.Drawing.Size(251, 70);
             this.kaynaklarbtn.TabIndex = 9;
             this.kaynaklarbtn.Text = "Kaynaklar";
             this.kaynaklarbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -104,10 +106,10 @@ namespace kutuphane_otomasyonu
             this.silKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.silKaynakbtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.silKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.silKaynakbtn.Location = new System.Drawing.Point(0, 511);
+            this.silKaynakbtn.Location = new System.Drawing.Point(0, 440);
             this.silKaynakbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.silKaynakbtn.Name = "silKaynakbtn";
-            this.silKaynakbtn.Size = new System.Drawing.Size(251, 73);
+            this.silKaynakbtn.Size = new System.Drawing.Size(251, 60);
             this.silKaynakbtn.TabIndex = 8;
             this.silKaynakbtn.Text = "sil";
             this.silKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -121,10 +123,10 @@ namespace kutuphane_otomasyonu
             this.GuncelKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.GuncelKaynakbtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.GuncelKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuncelKaynakbtn.Location = new System.Drawing.Point(0, 443);
+            this.GuncelKaynakbtn.Location = new System.Drawing.Point(0, 380);
             this.GuncelKaynakbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GuncelKaynakbtn.Name = "GuncelKaynakbtn";
-            this.GuncelKaynakbtn.Size = new System.Drawing.Size(251, 73);
+            this.GuncelKaynakbtn.Size = new System.Drawing.Size(251, 60);
             this.GuncelKaynakbtn.TabIndex = 7;
             this.GuncelKaynakbtn.Text = "düzenle";
             this.GuncelKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -138,10 +140,10 @@ namespace kutuphane_otomasyonu
             this.ekleKaynakbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ekleKaynakbtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.ekleKaynakbtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ekleKaynakbtn.Location = new System.Drawing.Point(0, 376);
+            this.ekleKaynakbtn.Location = new System.Drawing.Point(0, 320);
             this.ekleKaynakbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ekleKaynakbtn.Name = "ekleKaynakbtn";
-            this.ekleKaynakbtn.Size = new System.Drawing.Size(251, 73);
+            this.ekleKaynakbtn.Size = new System.Drawing.Size(251, 60);
             this.ekleKaynakbtn.TabIndex = 6;
             this.ekleKaynakbtn.Text = "ekle";
             this.ekleKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -155,10 +157,10 @@ namespace kutuphane_otomasyonu
             this.silKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.silKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.silKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.silKullanicibtn.Location = new System.Drawing.Point(0, 209);
+            this.silKullanicibtn.Location = new System.Drawing.Point(0, 190);
             this.silKullanicibtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.silKullanicibtn.Name = "silKullanicibtn";
-            this.silKullanicibtn.Size = new System.Drawing.Size(251, 73);
+            this.silKullanicibtn.Size = new System.Drawing.Size(251, 60);
             this.silKullanicibtn.TabIndex = 5;
             this.silKullanicibtn.Text = "kullanıcı sil    ";
             this.silKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -172,10 +174,10 @@ namespace kutuphane_otomasyonu
             this.guncelleKullanicibtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guncelleKullanicibtn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.guncelleKullanicibtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 139);
+            this.guncelleKullanicibtn.Location = new System.Drawing.Point(0, 130);
             this.guncelleKullanicibtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.guncelleKullanicibtn.Name = "guncelleKullanicibtn";
-            this.guncelleKullanicibtn.Size = new System.Drawing.Size(251, 73);
+            this.guncelleKullanicibtn.Size = new System.Drawing.Size(251, 60);
             this.guncelleKullanicibtn.TabIndex = 4;
             this.guncelleKullanicibtn.Text = "kullanıcı düzenle    ";
             this.guncelleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -192,7 +194,7 @@ namespace kutuphane_otomasyonu
             this.ekleKullanicibtn.Location = new System.Drawing.Point(0, 70);
             this.ekleKullanicibtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ekleKullanicibtn.Name = "ekleKullanicibtn";
-            this.ekleKullanicibtn.Size = new System.Drawing.Size(251, 73);
+            this.ekleKullanicibtn.Size = new System.Drawing.Size(251, 60);
             this.ekleKullanicibtn.TabIndex = 3;
             this.ekleKullanicibtn.Text = "kullanıcı ekle    ";
             this.ekleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -209,11 +211,27 @@ namespace kutuphane_otomasyonu
             this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(1114, 73);
             this.kullaniciBilgiPaneli.TabIndex = 1;
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(0, 500);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(251, 70);
+            this.button2.TabIndex = 10;
+            this.button2.Text = "Ödünç ver";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1365, 607);
+            this.ClientSize = new System.Drawing.Size(1365, 689);
             this.Controls.Add(this.kullaniciBilgiPaneli);
             this.Controls.Add(this.panel1);
             this.IsMdiContainer = true;
@@ -238,5 +256,6 @@ namespace kutuphane_otomasyonu
         private Button GuncelKaynakbtn;
         private Button ekleKaynakbtn;
         private Button kaynaklarbtn;
+        private Button button2;
     }
 }

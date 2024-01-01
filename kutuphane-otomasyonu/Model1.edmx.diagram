@@ -8,6 +8,10 @@
         <EntityTypeShape EntityType="KutuphaneOtomasyonModel.personal" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kullanicilar" Width="1.5" PointX="3.375" PointY="0.75" />
         <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kaynaklar" Width="1.5" PointX="6" PointY="0.875" />
+        <EntityTypeShape EntityType="KutuphaneOtomasyonModel.Kayitlar" Width="1.5" PointX="8.625" PointY="0.75" />
+        <EntityTypeShape EntityType="KutuphaneOtomasyonModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" />
+        <AssociationConnector Association="KutuphaneOtomasyonModel.FK_Kayitlar_Kaynaklar" />
+        <AssociationConnector Association="KutuphaneOtomasyonModel.FK_Kayitlar_Kullanicilar" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

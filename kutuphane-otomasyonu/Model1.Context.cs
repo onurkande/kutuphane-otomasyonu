@@ -28,5 +28,7 @@ namespace kutuphane_otomasyonu
         public virtual DbSet<personal> personal { get; set; }
         public virtual DbSet<Kullanicilar> Kullanicilar { get; set; }
         public virtual DbSet<Kaynaklar> Kaynaklar { get; set; }
+        public virtual DbSet<Kayitlar> Kayitlar { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
     }
 }
