@@ -129,6 +129,7 @@ namespace kutuphane_otomasyonu
             this.GuncelKaynakbtn.Text = "düzenle";
             this.GuncelKaynakbtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuncelKaynakbtn.UseVisualStyleBackColor = false;
+            this.GuncelKaynakbtn.Click += new System.EventHandler(this.GuncelKaynakbtn_Click);
             // 
             // ekleKaynakbtn
             // 
