@@ -1,4 +1,5 @@
-﻿using kutuphane_otomasyonu.Kaynak;
+﻿using kutuphane_otomasyonu.Kayit;
+using kutuphane_otomasyonu.Kaynak;
 using kutuphane_otomasyonu.Kullanici;
 using System;
 using System.Collections.Generic;
@@ -132,6 +133,13 @@ namespace kutuphane_otomasyonu
             KaynakGuncelleForm kGuncel = new KaynakGuncelleForm();
             kGuncel.MdiParent = this;
             kGuncel.Show();
+        }
+
+        private void button2_Click_2(object sender, EventArgs e)
+        {
+            OduncVerForm oduncForm= new OduncVerForm();
+            oduncForm.MdiParent = this;
+            oduncForm.Show();
         }
     }
 }
