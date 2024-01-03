@@ -42,6 +42,7 @@ namespace kutuphane_otomasyonu
             this.guncelleKullanicibtn = new System.Windows.Forms.Button();
             this.ekleKullanicibtn = new System.Windows.Forms.Button();
             this.kullaniciBilgiPaneli = new System.Windows.Forms.Panel();
+            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,7 +55,7 @@ namespace kutuphane_otomasyonu
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(251, 70);
+            this.button1.Size = new System.Drawing.Size(253, 70);
             this.button1.TabIndex = 2;
             this.button1.Text = "kullanıcılar      ";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -65,6 +66,7 @@ namespace kutuphane_otomasyonu
             // 
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.kaynaklarbtn);
             this.panel1.Controls.Add(this.silKaynakbtn);
@@ -228,6 +230,23 @@ namespace kutuphane_otomasyonu
             this.kullaniciBilgiPaneli.Size = new System.Drawing.Size(1114, 73);
             this.kullaniciBilgiPaneli.TabIndex = 1;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Yellow;
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button3.Location = new System.Drawing.Point(0, 565);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(253, 58);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Geri al";
+            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // IslemPaneli
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -258,5 +277,6 @@ namespace kutuphane_otomasyonu
         private Button ekleKaynakbtn;
         private Button kaynaklarbtn;
         private Button button2;
+        private Button button3;
     }
 }
