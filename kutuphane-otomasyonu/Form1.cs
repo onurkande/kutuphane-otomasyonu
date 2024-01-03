@@ -12,7 +12,12 @@ namespace kutuphane_otomasyonu
             InitializeComponent();
         }
 
-        private void personelGiris_Click_1(object sender, EventArgs e)
+        private KutuphaneOtomasyonEntities GetDb()
+        {
+            return db;
+        }
+
+        private void personelGiris_Click_1(object sender, EventArgs e, KutuphaneOtomasyonEntities db)
         {
             string gelenAd = personelAd.Text; // ada girilen degeri aldýk
             string gelenSifre = personelSifre.Text; //sifreye girilen degeri aldýk

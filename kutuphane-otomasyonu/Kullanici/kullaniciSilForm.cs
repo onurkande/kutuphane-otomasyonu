@@ -33,7 +33,8 @@ namespace kutuphane_otomasyonu.Kullanici
 
             int secilenId = Convert.ToInt16(dataGridView1.CurrentRow.Cells[0].Value);
 
-            var kullanici = db.Kullanicilar.Where(x => Kullanicilar => x.kullanici_id == secilenId).FirstOrDefault();
+            var kullanici = db.Kullanicilar.FirstOrDefault(x => x.kullanici_id == secilenId);
+
 
             db.Kullanicilar.Remove(kullanici);
             db.SaveChanges();
