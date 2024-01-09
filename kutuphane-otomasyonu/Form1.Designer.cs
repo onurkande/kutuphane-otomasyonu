@@ -93,7 +93,7 @@ namespace kutuphane_otomasyonu
             this.personelGiris.TabIndex = 4;
             this.personelGiris.Text = "Giriş";
             this.personelGiris.UseVisualStyleBackColor = false;
-            this.personelGiris.Click += new System.EventHandler(this.personelGiris_Click_1);
+            this.personelGiris.Click += new System.EventHandler(this.personelGiris_Click);
             // 
             // Form1
             // 

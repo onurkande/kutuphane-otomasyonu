@@ -56,5 +56,25 @@ namespace kutuphane_otomasyonu
         {
 
         }
+
+        private void personelGiris_Click(object sender, EventArgs e)
+        {
+            string gelenAd = personelAd.Text; // ada girilen degeri aldýk
+            string gelenSifre = personelSifre.Text; //sifreye girilen degeri aldýk
+
+            var personel = db.personal.Where(x => x.personal_ad.Equals(gelenAd) && x.personal_sifre.Equals(gelenSifre)).FirstOrDefault(); //personellerden x nesnesi olusturuldu
+
+            if (personel == null)
+            {
+                MessageBox.Show("Giriş başarısız,girdiğiniz bilgileri kontrol edin!");
+            }
+            else
+            {
+                MessageBox.Show("Giriş Başarılı"); //Ekrana mesajý gösteren kod
+                IslemPaneli panel = new IslemPaneli();
+                panel.Show();
+                this.Hide();
+            }
+        }
     }
 }
