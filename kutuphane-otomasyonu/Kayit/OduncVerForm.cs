@@ -54,7 +54,7 @@ namespace kutuphane_otomasyonu.Kayit
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             string gelenAd = textBox1.Text;
-            var bulunanKaynaklar=db.Kaynaklar.Where(x=>x.kaynak_ad.Contains(gelenAd));
+            var bulunanKaynaklar=db.Kaynaklar.Where(x=>x.kaynak_ad.Contains(gelenAd)).ToList();
             dataGridView2.DataSource = bulunanKaynaklar;
         }
 
